@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+
+/* Navbar.css */
+
+/* General styling for larger screens */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background: linear-gradient(black,rgb(80, 75, 75));*/
+    /*background: linear-gradient(rgb(134, 187, 233),white);*/
+    background:linear-gradient(rgb(112, 183, 231),white);
+    color: black;
+    padding: 5px;
+    width: 100%;
+  }
+   
+  .navart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+  }
+ 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+  .navsec1 h1{
+    background: -webkit-linear-gradient(red, black, white,blue, green, orange, purple, pink, olive);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    background-position: 50%;
+    font-size: 60px;
+}
+  
+  .navsec2 {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .navsec3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: row;
+      text-align: center;
+    }
+
+    .navart{
+      flex-direction: column;
+    }
+   
+    .navsec2, .navsec3 {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  }
+  

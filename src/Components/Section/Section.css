@@ -1,0 +1,44 @@
+ /* Section.css */ 
+
+ .section {
+    /*background: url("https://i.pinimg.com/originals/e0/67/f8/e067f85e867c15608110c48259536632.gif");*/
+    /*background: linear-gradient(rgb(187, 181, 181),gray);*/
+    /*background: rgb(139, 139, 203);*/
+    /*background: linear-gradient(rgb(225, 206, 183),rgb(170, 170, 230));*/
+    /*background: linear-gradient(white,rgb(154, 191, 211)) ;*/
+    background:linear-gradient(white, #9bbfd9,white);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+  
+  .secsec {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+   
+  .secdiv {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    width: 20%;
+  }
+  
+
+  /* Responsive styles for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .secsec {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .secdiv {
+      width: 40%;
+    }
+  }
+  
